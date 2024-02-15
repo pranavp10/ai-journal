@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "pnpm run db:generate && pnpm run db:generate next build",
+    "build": "pnpm run db:generate && pnpm run db:generate && next build",
     "start": "next start",
     "lint": "next lint",
     "db:generate": "npx prisma generate",
@@ -31,7 +31,7 @@
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.0",
     "lucide-react": "^0.331.0",
-    "next": "14.1.0",
+    "next": "^14.1.0",
     "next-auth": "^4.24.6",
     "next-themes": "^0.2.1",
     "react": "^18",
