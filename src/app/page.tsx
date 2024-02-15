@@ -1,183 +1,143 @@
-/**
- * v0 by Vercel.
- * @see https://v0.dev/t/PmwTvNfrVgf
- * Documentation: https://v0.dev/docs#integrating-generated-code-into-your-nextjs-app
- */
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Logo } from "@/components/ui/logo";
+import Image from "next/image";
 import Link from "next/link";
 
 export default function LandingPage() {
   return (
     <div className="flex flex-col min-h-screen">
-      <header className="px-4 lg:px-6 h-14 flex items-center">
-        <Link className="flex items-center justify-center" href="#">
-          <MountainIcon className="h-6 w-6" />
-          <span className="sr-only">Acme Inc</span>
-        </Link>
-        <nav className="ml-auto flex gap-4 sm:gap-6">
-          <Link
-            className="text-sm font-medium hover:underline underline-offset-4"
-            href="#features"
+      <svg
+        viewBox="0 0 1280 649"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        className="absolute z-0"
+      >
+        <path
+          d="M840 649C840 538.543 750.457 449 640 449C529.543 449 440 538.543 440 649M804 649C804 558.425 730.575 485 640 485C549.425 485 476 558.425 476 649M744 649C744 591.562 697.438 545 640 545C582.562 545 536 591.562 536 649M768 649C768 578.308 710.692 521 640 521C569.308 521 512 578.308 512 649M708 649C708 611.445 677.555 581 640 581C602.445 581 572 611.445 572 649M696 649C696 618.072 670.928 593 640 593C609.072 593 584 618.072 584 649M684 649C684 624.699 664.301 605 640 605C615.699 605 596 624.699 596 649M672 649C672 631.327 657.673 617 640 617C622.327 617 608 631.327 608 649M648 649C648 644.582 644.418 641 640 641C635.582 641 632 644.582 632 649M660 649C660 637.954 651.046 629 640 629C628.954 629 620 637.954 620 649M828 649C828 545.17 743.83 461 640 461C536.17 461 452 545.17 452 649M792 649C792 565.053 723.947 497 640 497C556.053 497 488 565.053 488 649M732 649C732 598.19 690.81 557 640 557C589.19 557 548 598.19 548 649M816 649C816 551.798 737.202 473 640 473C542.798 473 464 551.798 464 649M756 649C756 584.935 704.065 533 640 533C575.935 533 524 584.935 524 649M780 649C780 571.68 717.32 509 640 509C562.68 509 500 571.68 500 649M720 649C720 604.817 684.183 569 640 569C595.817 569 560 604.817 560 649M852 649C852 531.916 757.084 437 640 437C522.916 437 428 531.916 428 649M864 649C864 525.288 763.712 425 640 425C516.288 425 416 525.288 416 649M876 649C876 518.661 770.339 413 640 413C509.661 413 404 518.661 404 649M888 649C888 512.033 776.967 401 640 401C503.033 401 392 512.033 392 649M900 649C900 505.406 783.594 389 640 389C496.406 389 380 505.406 380 649M912 649C912 498.779 790.221 377 640 377C489.779 377 368 498.779 368 649M924 649C924 492.151 796.849 365 640 365C483.151 365 356 492.151 356 649M936 649C936 485.524 803.476 353 640 353C476.524 353 344 485.524 344 649M948 649C948 478.896 810.104 341 640 341C469.896 341 332 478.896 332 649M960 649C960 472.269 816.731 329 640 329C463.269 329 320 472.269 320 649M972 649C972 465.641 823.359 317 640 317C456.641 317 308 465.641 308 649M984 649C984 459.014 829.986 305 640 305C450.014 305 296 459.014 296 649M996 649C996 452.387 836.613 293 640 293C443.387 293 284 452.387 284 649M1008 649C1008 445.759 843.241 281 640 281C436.759 281 272 445.759 272 649M1020 649C1020 439.132 849.868 269 640 269C430.132 269 260 439.132 260 649M1032 649C1032 432.504 856.496 257 640 257C423.504 257 248 432.504 248 649M1044 649C1044 425.877 863.123 245 640 245C416.877 245 236 425.877 236 649M1056 649C1056 419.25 869.75 233 640 233C410.25 233 224 419.25 224 649M1068 649C1068 412.622 876.378 221 640 221C403.622 221 212 412.622 212 649M1080 649C1080 405.995 883.005 209 640 209C396.995 209 200 405.995 200 649M1092 649C1092 399.367 889.633 197 640 197C390.367 197 188 399.367 188 649M1104 649C1104 392.74 896.26 185 640 185C383.74 185 176 392.74 176 649M1116 649C1116 386.112 902.888 173 640 173C377.112 173 164 386.112 164 649M1128 649C1128 379.485 909.515 161 640 161C370.485 161 152 379.485 152 649M1140 649C1140 372.858 916.142 149 640 149C363.858 149 140 372.858 140 649M1152 649C1152 366.23 922.77 137 640 137C357.23 137 128 366.23 128 649M1164 649C1164 359.603 929.397 125 640 125C350.603 125 116 359.603 116 649M1176 649C1176 352.975 936.025 113 640 113C343.975 113 104 352.975 104 649M1188 649C1188 346.348 942.652 101 640 101C337.348 101 92 346.348 92 649M1200 649C1200 339.721 949.279 89 640 89C330.721 89 80 339.721 80 649M1212 649C1212 333.093 955.907 77 640 77C324.093 77 68 333.093 68 649M1224 649C1224 326.466 962.534 65 640 65C317.466 65 56 326.466 56 649M1236 649C1236 319.838 969.162 53 640 53C310.838 53 44 319.838 44 649M1272 649C1272 299.956 989.044 17 640 17C290.956 17 8 299.956 8 649M1296 649C1296 286.701 1002.3 -7 640 -7C277.701 -7 -16 286.701 -16 649M1320 649C1320 273.446 1015.55 -31 640 -31C264.446 -31 -40 273.446 -40 649M1344 649C1344 260.192 1028.81 -55 640 -55C251.192 -55 -64 260.192 -64 649M1248 649C1248 313.211 975.789 41 640 41C304.211 41 32 313.211 32 649M1260 649C1260 306.583 982.417 29 640 29C297.583 29 20 306.583 20 649M1284 649C1284 293.329 995.671 5 640 5C284.329 5 -4 293.329 -4 649M1308 649C1308 280.074 1008.93 -19 640 -19C271.074 -19 -28 280.074 -28 649M1332 649C1332 266.819 1022.18 -43 640 -43C257.819 -43 -52 266.819 -52 649M1356 649C1356 253.564 1035.44 -67 640 -67C244.564 -67 -76 253.564 -76 649M1380 649C1380 240.309 1048.69 -91 640 -91C231.309 -91 -100 240.309 -100 649M1476 649C1476 187.29 1101.71 -187 640 -187C178.29 -187 -196 187.29 -196 649M1404 649C1404 227.054 1061.95 -115 640 -115C218.054 -115 -124 227.054 -124 649M1500 649C1500 174.035 1114.96 -211 640 -211C165.035 -211 -220 174.035 -220 649M1428 649C1428 213.8 1075.2 -139 640 -139C204.8 -139 -148 213.8 -148 649M1524 649C1524 160.78 1128.22 -235 640 -235C151.78 -235 -244 160.78 -244 649M1452 649C1452 200.545 1088.46 -163 640 -163C191.545 -163 -172 200.545 -172 649M1548 649C1548 147.525 1141.47 -259 640 -259C138.525 -259 -268 147.525 -268 649M1368 649C1368 246.937 1042.06 -79 640 -79C237.937 -79 -88 246.937 -88 649M1392 649C1392 233.682 1055.32 -103 640 -103C224.682 -103 -112 233.682 -112 649M1488 649C1488 180.663 1108.34 -199 640 -199C171.663 -199 -208 180.663 -208 649M1416 649C1416 220.427 1068.57 -127 640 -127C211.427 -127 -136 220.427 -136 649M1512 649C1512 167.408 1121.59 -223 640 -223C158.408 -223 -232 167.408 -232 649M1440 649C1440 207.172 1081.83 -151 640 -151C198.172 -151 -160 207.172 -160 649M1536 649C1536 154.153 1134.85 -247 640 -247C145.153 -247 -256 154.153 -256 649M1464 649C1464 193.917 1095.08 -175 640 -175C184.917 -175 -184 193.917 -184 649M1560 649C1560 140.898 1148.1 -271 640 -271C131.898 -271 -280 140.898 -280 649"
+          stroke="url(#paint0_linear_22_956)"
+        />
+        <mask
+          id="mask0_22_956"
+          style={{ maskType: "alpha" }}
+          maskUnits="userSpaceOnUse"
+          x={-281}
+          y={-272}
+          width={1842}
+          height={921}
+        >
+          <path
+            d="M840 649C840 538.543 750.457 449 640 449C529.543 449 440 538.543 440 649M804 649C804 558.425 730.575 485 640 485C549.425 485 476 558.425 476 649M744 649C744 591.562 697.438 545 640 545C582.562 545 536 591.562 536 649M768 649C768 578.308 710.692 521 640 521C569.308 521 512 578.308 512 649M708 649C708 611.445 677.555 581 640 581C602.445 581 572 611.445 572 649M696 649C696 618.072 670.928 593 640 593C609.072 593 584 618.072 584 649M684 649C684 624.699 664.301 605 640 605C615.699 605 596 624.699 596 649M672 649C672 631.327 657.673 617 640 617C622.327 617 608 631.327 608 649M648 649C648 644.582 644.418 641 640 641C635.582 641 632 644.582 632 649M660 649C660 637.954 651.046 629 640 629C628.954 629 620 637.954 620 649M828 649C828 545.17 743.83 461 640 461C536.17 461 452 545.17 452 649M792 649C792 565.053 723.947 497 640 497C556.053 497 488 565.053 488 649M732 649C732 598.19 690.81 557 640 557C589.19 557 548 598.19 548 649M816 649C816 551.798 737.202 473 640 473C542.798 473 464 551.798 464 649M756 649C756 584.935 704.065 533 640 533C575.935 533 524 584.935 524 649M780 649C780 571.68 717.32 509 640 509C562.68 509 500 571.68 500 649M720 649C720 604.817 684.183 569 640 569C595.817 569 560 604.817 560 649M852 649C852 531.916 757.084 437 640 437C522.916 437 428 531.916 428 649M864 649C864 525.288 763.712 425 640 425C516.288 425 416 525.288 416 649M876 649C876 518.661 770.339 413 640 413C509.661 413 404 518.661 404 649M888 649C888 512.033 776.967 401 640 401C503.033 401 392 512.033 392 649M900 649C900 505.406 783.594 389 640 389C496.406 389 380 505.406 380 649M912 649C912 498.779 790.221 377 640 377C489.779 377 368 498.779 368 649M924 649C924 492.151 796.849 365 640 365C483.151 365 356 492.151 356 649M936 649C936 485.524 803.476 353 640 353C476.524 353 344 485.524 344 649M948 649C948 478.896 810.104 341 640 341C469.896 341 332 478.896 332 649M960 649C960 472.269 816.731 329 640 329C463.269 329 320 472.269 320 649M972 649C972 465.641 823.359 317 640 317C456.641 317 308 465.641 308 649M984 649C984 459.014 829.986 305 640 305C450.014 305 296 459.014 296 649M996 649C996 452.387 836.613 293 640 293C443.387 293 284 452.387 284 649M1008 649C1008 445.759 843.241 281 640 281C436.759 281 272 445.759 272 649M1020 649C1020 439.132 849.868 269 640 269C430.132 269 260 439.132 260 649M1032 649C1032 432.504 856.496 257 640 257C423.504 257 248 432.504 248 649M1044 649C1044 425.877 863.123 245 640 245C416.877 245 236 425.877 236 649M1056 649C1056 419.25 869.75 233 640 233C410.25 233 224 419.25 224 649M1068 649C1068 412.622 876.378 221 640 221C403.622 221 212 412.622 212 649M1080 649C1080 405.995 883.005 209 640 209C396.995 209 200 405.995 200 649M1092 649C1092 399.367 889.633 197 640 197C390.367 197 188 399.367 188 649M1104 649C1104 392.74 896.26 185 640 185C383.74 185 176 392.74 176 649M1116 649C1116 386.112 902.888 173 640 173C377.112 173 164 386.112 164 649M1128 649C1128 379.485 909.515 161 640 161C370.485 161 152 379.485 152 649M1140 649C1140 372.858 916.142 149 640 149C363.858 149 140 372.858 140 649M1152 649C1152 366.23 922.77 137 640 137C357.23 137 128 366.23 128 649M1164 649C1164 359.603 929.397 125 640 125C350.603 125 116 359.603 116 649M1176 649C1176 352.975 936.025 113 640 113C343.975 113 104 352.975 104 649M1188 649C1188 346.348 942.652 101 640 101C337.348 101 92 346.348 92 649M1200 649C1200 339.721 949.279 89 640 89C330.721 89 80 339.721 80 649M1212 649C1212 333.093 955.907 77 640 77C324.093 77 68 333.093 68 649M1224 649C1224 326.466 962.534 65 640 65C317.466 65 56 326.466 56 649M1236 649C1236 319.838 969.162 53 640 53C310.838 53 44 319.838 44 649M1272 649C1272 299.956 989.044 17 640 17C290.956 17 8 299.956 8 649M1296 649C1296 286.701 1002.3 -7 640 -7C277.701 -7 -16 286.701 -16 649M1320 649C1320 273.446 1015.55 -31 640 -31C264.446 -31 -40 273.446 -40 649M1344 649C1344 260.192 1028.81 -55 640 -55C251.192 -55 -64 260.192 -64 649M1248 649C1248 313.211 975.789 41 640 41C304.211 41 32 313.211 32 649M1260 649C1260 306.583 982.417 29 640 29C297.583 29 20 306.583 20 649M1284 649C1284 293.329 995.671 5 640 5C284.329 5 -4 293.329 -4 649M1308 649C1308 280.074 1008.93 -19 640 -19C271.074 -19 -28 280.074 -28 649M1332 649C1332 266.819 1022.18 -43 640 -43C257.819 -43 -52 266.819 -52 649M1356 649C1356 253.564 1035.44 -67 640 -67C244.564 -67 -76 253.564 -76 649M1380 649C1380 240.309 1048.69 -91 640 -91C231.309 -91 -100 240.309 -100 649M1476 649C1476 187.29 1101.71 -187 640 -187C178.29 -187 -196 187.29 -196 649M1404 649C1404 227.054 1061.95 -115 640 -115C218.054 -115 -124 227.054 -124 649M1500 649C1500 174.035 1114.96 -211 640 -211C165.035 -211 -220 174.035 -220 649M1428 649C1428 213.8 1075.2 -139 640 -139C204.8 -139 -148 213.8 -148 649M1524 649C1524 160.78 1128.22 -235 640 -235C151.78 -235 -244 160.78 -244 649M1452 649C1452 200.545 1088.46 -163 640 -163C191.545 -163 -172 200.545 -172 649M1548 649C1548 147.525 1141.47 -259 640 -259C138.525 -259 -268 147.525 -268 649M1368 649C1368 246.937 1042.06 -79 640 -79C237.937 -79 -88 246.937 -88 649M1392 649C1392 233.682 1055.32 -103 640 -103C224.682 -103 -112 233.682 -112 649M1488 649C1488 180.663 1108.34 -199 640 -199C171.663 -199 -208 180.663 -208 649M1416 649C1416 220.427 1068.57 -127 640 -127C211.427 -127 -136 220.427 -136 649M1512 649C1512 167.408 1121.59 -223 640 -223C158.408 -223 -232 167.408 -232 649M1440 649C1440 207.172 1081.83 -151 640 -151C198.172 -151 -160 207.172 -160 649M1536 649C1536 154.153 1134.85 -247 640 -247C145.153 -247 -256 154.153 -256 649M1464 649C1464 193.917 1095.08 -175 640 -175C184.917 -175 -184 193.917 -184 649M1560 649C1560 140.898 1148.1 -271 640 -271C131.898 -271 -280 140.898 -280 649"
+            stroke="url(#paint1_linear_22_956)"
+          />
+        </mask>
+        <g mask="url(#mask0_22_956)">
+          <g filter="url(#filter0_f_22_956)">
+            <circle
+              cx={640}
+              cy={599}
+              r={198}
+              fill="#F97216"
+              fillOpacity="0.4"
+            />
+          </g>
+        </g>
+        <defs>
+          <filter
+            id="filter0_f_22_956"
+            x={-18}
+            y={-59}
+            width={1316}
+            height={1316}
+            filterUnits="userSpaceOnUse"
+            colorInterpolationFilters="sRGB"
           >
-            Features
-          </Link>
-          <Link
-            className="text-sm font-medium hover:underline underline-offset-4"
-            href="/sign-in"
+            <feFlood floodOpacity={0} result="BackgroundImageFix" />
+            <feBlend
+              mode="normal"
+              in="SourceGraphic"
+              in2="BackgroundImageFix"
+              result="shape"
+            />
+            <feGaussianBlur
+              stdDeviation={230}
+              result="effect1_foregroundBlur_22_956"
+            />
+          </filter>
+          <linearGradient
+            id="paint0_linear_22_956"
+            x1={640}
+            y1={-271}
+            x2={640}
+            y2={649}
+            gradientUnits="userSpaceOnUse"
           >
-            Sign In
+            <stop stopColor="#FCFCFC" />
+            <stop offset="0.855" stopColor="#FCFCFC" />
+            <stop offset={1} stopColor="#FCFCFC" stopOpacity={0} />
+          </linearGradient>
+          <linearGradient
+            id="paint1_linear_22_956"
+            x1={640}
+            y1={-271}
+            x2={640}
+            y2={649}
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop stopColor="#FCFCFC" />
+            <stop offset="0.855" stopColor="#FCFCFC" />
+            <stop offset={1} stopColor="#FCFCFC" stopOpacity={0} />
+          </linearGradient>
+        </defs>
+      </svg>
+      <div className="z-10">
+        <header className="flex justify-center items-center my-6">
+          <Link className="flex items-center justify-center gap-2" href="/">
+            <Logo />
+            <p className="font-semibold text-2xl">Dayblog</p>
           </Link>
-        </nav>
-      </header>
-      <main className="flex-1">
-        <section className="w-full py-6 sm:py-12 md:py-24 lg:py-32 xl:py-48">
-          <div className="container px-4 md:px-6">
-            <div className="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]">
-              <div className="bg-neutral-100 dark:bg-neutral-800 mx-auto aspect-video overflow-hidden rounded-xl object-cover sm:w-full lg:order-last lg:aspect-square" />
-              <div className="flex flex-col justify-center space-y-4">
-                <div className="space-y-2">
-                  <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
-                    The complete platform <br />
-                    for building the Web
-                  </h1>
-                  <p className="max-w-[600px] text-neutral-500 md:text-xl dark:text-neutral-400">
-                    Give your team the toolkit to stop configuring and start
-                    innovating. Securely build, deploy, and scale the best web
-                    experiences.
-                  </p>
-                </div>
-                <div className="flex flex-col gap-2 min-[400px]:flex-row">
-                  <Link
-                    className="inline-flex h-10 items-center justify-center rounded-md bg-neutral-900 px-8 text-sm font-medium text-neutral-50 shadow transition-colors hover:bg-neutral-900/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-neutral-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-neutral-50 dark:text-neutral-900 dark:hover:bg-neutral-50/90 dark:focus-visible:ring-neutral-300"
-                    href="#"
-                  >
-                    Get Started
-                  </Link>
-                  <Link
-                    className="inline-flex h-10 items-center justify-center rounded-md border border-neutral-200 bg-white px-8 text-sm font-medium shadow-sm transition-colors hover:bg-neutral-100 hover:text-neutral-900 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-neutral-950 disabled:pointer-events-none disabled:opacity-50 dark:border-neutral-800 dark:bg-neutral-950 dark:hover:bg-neutral-800 dark:hover:text-neutral-50 dark:focus-visible:ring-neutral-300"
-                    href="#"
-                  >
-                    Contact Sales
-                  </Link>
-                </div>
+        </header>
+        <main className="flex-1">
+          <section className="">
+            <div className="mt-8 mb-3 flex justify-center items-center">
+              <div className="border-orange-300 border w-fit rounded-full text-xs px-3 py-1 bg-orange-50 text-primary">
+                Dayblog is in closed beta
               </div>
             </div>
-          </div>
-        </section>
-        <section id="features" className="w-full py-12 md:py-24 lg:py-32">
-          <div className="container px-4 md:px-6">
-            <div className="flex flex-col items-center justify-center space-y-4 text-center">
-              <div className="space-y-2">
-                <div className="inline-block rounded-lg bg-neutral-100 px-3 py-1 text-sm dark:bg-neutral-800">
-                  Key Features
-                </div>
-                <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight">
-                  Faster iteration. More innovation.
-                </h2>
-                <p className="max-w-[900px] text-neutral-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-neutral-400">
-                  The platform for rapid progress. Let your team focus on
-                  shipping features instead of managing infrastructure with
-                  automated CI/CD.
-                </p>
-              </div>
+            <h1 className="font-semibold text-center text-5xl max-w-xl mx-auto pb-1 text-gradient">
+              The more beautiful way to journal your day
+            </h1>
+          </section>
+          <section className="flex justify-center items-center mt-8">
+            <div className="flex items-center gap-2">
+              <Input
+                className="w-72 placeholder:text-neutral-400"
+                type="email"
+                placeholder="Enter your email"
+              />
+              <Button>Join watchlist</Button>
             </div>
-            <div className="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-2 lg:gap-10">
-              <div className="mx-auto aspect-video overflow-hidden bg-neutral-100 dark:bg-neutral-800 rounded-xl object-cover object-center sm:w-full lg:order-last" />
-              <div className="flex flex-col justify-center space-y-4">
-                <ul className="grid gap-6">
-                  <li>
-                    <div className="grid gap-1">
-                      <h3 className="text-xl font-bold">Collaboration</h3>
-                      <p className="text-neutral-500 dark:text-neutral-400">
-                        Make collaboration seamless with built-in code review
-                        tools.
-                      </p>
-                    </div>
-                  </li>
-                  <li>
-                    <div className="grid gap-1">
-                      <h3 className="text-xl font-bold">Automation</h3>
-                      <p className="text-neutral-500 dark:text-neutral-400">
-                        Automate your workflow with continuous integration.
-                      </p>
-                    </div>
-                  </li>
-                  <li>
-                    <div className="grid gap-1">
-                      <h3 className="text-xl font-bold">Scale</h3>
-                      <p className="text-neutral-500 dark:text-neutral-400">
-                        Deploy to the cloud with a single click and scale with
-                        ease.
-                      </p>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section className="w-full py-12 md:py-24 lg:py-32 border-t">
-          <div className="container px-4 md:px-6">
-            <div className="flex flex-col items-center justify-center space-y-4 text-center">
-              <div className="space-y-2">
-                <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">
-                  Sign Up for Updates
-                </h2>
-                <p className="max-w-[600px] text-neutral-500 md:text-xl dark:text-neutral-400">
-                  Stay updated with the latest product news and updates.
-                </p>
-              </div>
-              <div className="w-full max-w-sm space-y-2">
-                <form className="flex sm:flex-row flex-col space-y-2 sm:space-y-0 sm:space-x-2">
-                  <input
-                    className="max-w-lg flex-1 px-4 py-2 border-border border rounded-md "
-                    placeholder="Enter your email"
-                    type="email"
-                  />
-                  <button
-                    type="submit"
-                    className="inline-flex h-10 items-center justify-center rounded-md bg-neutral-900 px-4 text-sm font-medium text-neutral-50 shadow transition-colors hover:bg-neutral-900/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-neutral-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-neutral-50 dark:text-neutral-900 dark:hover:bg-neutral-50/90 dark:focus-visible:ring-neutral-300"
-                  >
-                    Sign Up
-                  </button>
-                </form>
-              </div>
-            </div>
-          </div>
-        </section>
-      </main>
-      <footer className="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t">
-        <p className="text-xs text-neutral-500 dark:text-neutral-400">
-          © 2024 Acme Inc. All rights reserved.
-        </p>
-        <nav className="sm:ml-auto flex gap-4 sm:gap-6">
-          <Link className="text-xs hover:underline underline-offset-4" href="#">
-            Terms of Service
-          </Link>
-          <Link className="text-xs hover:underline underline-offset-4" href="#">
-            Privacy
-          </Link>
-        </nav>
-      </footer>
+          </section>
+          <section id="features" className="flex justify-center mt-16">
+            <Image
+              src="/screenShort.png"
+              width={1088}
+              height={700}
+              alt="dashboard of dayblog"
+            />
+          </section>
+        </main>
+        <footer className="flex justify-center my-32">
+          <nav className="flex flex-col gap-2">
+            <p className="text-2xl font-semibold text-gradient text-center">
+              Dayblog
+            </p>
+            <p className="text-xs text-center text-neutral-500">
+              All rights reserved. © 2024
+            </p>
+          </nav>
+        </footer>
+      </div>
     </div>
-  );
-}
-
-function MountainIcon(props: any) {
-  return (
-    <svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <path d="m8 3 4 8 5-5 5 15H2L8 3z" />
-    </svg>
   );
 }
