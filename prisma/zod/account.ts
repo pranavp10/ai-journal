@@ -6,6 +6,7 @@ export const accountSchema = z.object({
   userId: z.string(),
   type: z.string(),
   provider: z.string(),
+  role: z.string(),
   providerAccountId: z.string(),
   refresh_token: z.string().nullish(),
   access_token: z.string().nullish(),
