@@ -90,7 +90,7 @@ export default function LandingPage() {
           </linearGradient>
         </defs>
       </svg>
-      <div className="z-10">
+      <div className="z-10 p-4">
         <header className="flex justify-center items-center my-6">
           <Link className="flex items-center justify-center gap-2" href="/">
             <Logo />
@@ -104,21 +104,21 @@ export default function LandingPage() {
                 Dayblog is in closed beta
               </div>
             </div>
-            <h1 className="font-semibold text-center text-5xl max-w-xl mx-auto pb-1 text-gradient">
+            <h1 className="font-semibold text-center text-3xl  sm:text-5xl max-w-xl mx-auto pb-1 text-gradient">
               The more beautiful way to journal your day
             </h1>
           </section>
-          <section className="flex justify-center items-center mt-8">
-            <div className="flex items-center gap-2">
+          <section className="flex justify-center items-center mt-14 sm:mt-8">
+            <div className="flex items-center gap-2 sm:flex-row flex-col w-full">
               <Input
-                className="w-72 placeholder:text-neutral-400"
+                className="w-full flex-1 sm:w-72 placeholder:text-neutral-400"
                 type="email"
                 placeholder="Enter your email"
               />
-              <Button>Join watchlist</Button>
+              <Button className="w-full sm:w-auto">Join watchlist</Button>
             </div>
           </section>
-          <section id="features" className="flex justify-center mt-16">
+          <section id="features" className="flex justify-center mt-16 relative">
             <Image
               src="/screenShort.png"
               width={1088}
@@ -127,7 +127,7 @@ export default function LandingPage() {
             />
           </section>
         </main>
-        <footer className="flex justify-center my-32">
+        <footer className="flex justify-center my-16 sm:my-32">
           <nav className="flex flex-col gap-2">
             <p className="text-2xl font-semibold text-gradient text-center">
               Dayblog
