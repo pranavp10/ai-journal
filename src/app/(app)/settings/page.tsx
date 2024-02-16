@@ -44,7 +44,7 @@ export default function Page() {
             </span>
           </div>
         </Button>
-        <Button
+        {/* <Button
           asChild
           variant={"ghost"}
           onClick={() => setTheme("dark")}
@@ -71,8 +71,8 @@ export default function Page() {
               Dark
             </span>
           </div>
-        </Button>
-        <Button
+        </Button> */}
+        {/* <Button
           asChild
           variant={"ghost"}
           onClick={() => setTheme("system")}
@@ -99,7 +99,7 @@ export default function Page() {
               System
             </span>
           </div>
-        </Button>
+        </Button> */}
       </div>
     </div>
   );

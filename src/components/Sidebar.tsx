@@ -4,16 +4,20 @@ import SidebarItems from "./SidebarItems";
 import { Avatar, AvatarFallback } from "./ui/avatar";
 
 import { AuthSession, getUserAuth } from "@/lib/auth/utils";
+import { Logo } from "./ui/logo";
 
 const Sidebar = async () => {
   const session = await getUserAuth();
   if (session.session === null) return null;
 
   return (
-    <aside className="h-screen min-w-52 bg-muted hidden md:block p-4 pt-8 border-r border-border shadow-inner">
+    <aside className="h-screen min-w-72 bg-neutral-50 hidden md:block p-4 border-r border-border shadow-inner">
       <div className="flex flex-col justify-between h-full">
         <div className="space-y-4">
-          <h3 className="text-lg font-semibold ml-4">Logo</h3>
+          <div className="flex items-center gap-2">
+            <Logo />
+            <p className="font-semibold text-2xl">Dayblog</p>
+          </div>
           <SidebarItems />
         </div>
         <UserDetails session={session} />
