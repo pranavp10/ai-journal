@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Logo } from "@/components/ui/logo";
+import HomePageWatchListForm from "@/components/waitlist/HomePageWatchlistForm";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -109,14 +110,7 @@ export default function LandingPage() {
             </h1>
           </section>
           <section className="flex justify-center items-center mt-14 sm:mt-8">
-            <div className="flex items-center gap-2 sm:flex-row flex-col w-full">
-              <Input
-                className="w-full flex-1 sm:w-72 placeholder:text-neutral-400"
-                type="email"
-                placeholder="Enter your email"
-              />
-              <Button className="w-full sm:w-auto">Join watchlist</Button>
-            </div>
+            <HomePageWatchListForm />
           </section>
           <section id="features" className="flex justify-center mt-16 relative">
             <Image
