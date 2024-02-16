@@ -18,6 +18,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <script
+          defer
+          data-domain="dayblog.app"
+          src="https://plausible.pranavp.xyz/js/script.js"
+        ></script>
         <>
           <link
             rel="apple-touch-icon"
