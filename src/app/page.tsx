@@ -1,5 +1,3 @@
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
 import { Logo } from "@/components/ui/logo";
 import HomePageWatchListForm from "@/components/waitlist/HomePageWatchlistForm";
 import Image from "next/image";
@@ -91,7 +89,7 @@ export default function LandingPage() {
           </linearGradient>
         </defs>
       </svg>
-      <div className="z-10 p-4">
+      <div className="z-10">
         <header className="flex justify-center items-center my-6">
           <Link className="flex items-center justify-center gap-2" href="/">
             <Logo />
@@ -105,19 +103,27 @@ export default function LandingPage() {
                 Dayblog is in closed beta
               </div>
             </div>
-            <h1 className="font-semibold text-center text-3xl  sm:text-5xl max-w-xl mx-auto pb-1 text-gradient">
+            <h1 className="font-semibold text-center text-3xl  sm:text-5xl max-w-xl mx-auto pb-1 text-gradient px-4">
               The more beautiful way to journal your day
             </h1>
           </section>
-          <section className="flex justify-center items-center mt-14 sm:mt-8">
+          <section className="flex justify-center items-center mt-14 sm:mt-8 px-9 sm:px-0">
             <HomePageWatchListForm />
           </section>
           <section id="features" className="flex justify-center mt-16 relative">
             <Image
-              src="/screenShort.png"
+              src="/screenShort.webp"
               width={1088}
               height={700}
               alt="dashboard of dayblog"
+              className="hidden sm:block"
+            />
+            <Image
+              src="/mobileScreenShort.webp"
+              width={1088}
+              height={700}
+              alt="dashboard of dayblog"
+              className="block sm:hidden pr-4"
             />
           </section>
         </main>

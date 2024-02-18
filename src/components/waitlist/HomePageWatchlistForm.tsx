@@ -64,24 +64,22 @@ const HomePageWatchListForm = () => {
       onChange={handleChange}
       className="flex items-center gap-2 sm:flex-row flex-col w-full sm:w-fit"
     >
-      <div className="">
-        <Input
-          className={`w-full flex-1 sm:w-72 placeholder:text-neutral-400 ${cn(
-            errors?.email ? "ring ring-destructive" : ""
-          )}`}
-          type="email"
-          required
-          placeholder="Enter your email"
-          name="email"
-        />
-      </div>
+      <Input
+        className={`w-full flex-1 sm:w-72 placeholder:text-neutral-400 ${cn(
+          errors?.email ? "ring ring-destructive" : ""
+        )}`}
+        type="email"
+        required
+        placeholder="Enter your email"
+        name="email"
+      />
       <Button
         className="w-full sm:w-auto"
         type="submit"
         disabled={hasErrors}
         aria-disabled={hasErrors}
       >
-        Join watchlist
+        Join waitlist
       </Button>
     </form>
   );
